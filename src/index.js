@@ -6,14 +6,12 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import reportWebVitals from './reportWebVitals';
-import Home from './components/Home';
-import MenuHospitales from './components/MenuHospitales';
+import Router from './Router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<div>
-  <Home />
-  <MenuHospitales />
-</div>);
+root.render(
+  <Router />
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
