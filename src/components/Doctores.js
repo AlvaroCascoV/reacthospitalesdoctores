@@ -24,6 +24,9 @@ export default class Doctores extends Component {
     componentDidUpdate = (oldProps) => {
         if (oldProps.idhospital !== this.props.idhospital) {
             this.loadDoctoresHospital();
+            this.setState({
+                idDoctor: -1
+            })
         }
     }
     render() {
